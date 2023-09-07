@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+
+int setKBits(int n, int k) {
+
+    // Iterating and manually set k bits of the number.
+    for (int i = 0; i < k; i++) {
+        // temp holds the value of integer whose only ith bit is set.
+        int temp = (1 << i);
+
+        // Update the number by performing Bitwise OR.
+        n = n | temp;
+    }
+    return n;
+
+}
